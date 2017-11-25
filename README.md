@@ -6,8 +6,8 @@ SAD project Traversity (php+mySQL)
 - install laravel via composer https://laravel.com/docs/5.5/installation#installing-laravel
 - download the code/ clone the repo
 - run XAMPP and create a database "traversity" in phpmyadmin
-- open the project in terminal/cmd
-- enter command "php artisan migrate"
-- enter command "php artisan serve"
+- navigate to the project folder in terminal/cmd
+- enter command `php artisan migrate`
+- enter command `php artisan serve`
 
 
