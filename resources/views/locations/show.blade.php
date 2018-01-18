@@ -22,7 +22,7 @@
     <script type="text/javascript">
         function initMap() {
 
-            var locations = $("#location").html().split("|");
+            var locations = $("#location").html().split("-");
             var lat_lng = {lat: parseFloat(locations[0]), lng: parseFloat(locations[1])};
             console.log(lat_lng);
             var map = new google.maps.Map(document.getElementById('map'), {
