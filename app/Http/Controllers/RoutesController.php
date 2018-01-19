@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Route;
 use App\Location;
+use App\User;
+
 
 class RoutesController extends Controller
 {
@@ -59,7 +61,8 @@ class RoutesController extends Controller
         $route->title = $request->input('title');
         $route->category = $request->input('category');
         $route->description = $request->input('description');
-        $route->thumbnail = $request->input('thumbnail');       
+        $route->thumbnail = $request->input('thumbnail');
+        $route->user_id	= auth()->user()->id;       
         $route->save();     
         
         //also add to location_route

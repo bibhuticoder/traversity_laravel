@@ -39,6 +39,8 @@
             {{Form::label('description', 'Description')}}
             {{Form::textarea('description', '', ['class'=>'form-control', 'placeholder'=>'Body', 'id'=> 'article-ckeditor'])}}
          </div>
+             <input type="hidden" name="_token" value="{{ csrf_token() }}">
+
        
          {{Form::submit('Submit', ['class'=>'btn btn-primary'])}}
     {!! Form::close() !!}
